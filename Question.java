@@ -33,9 +33,9 @@ public class Question {
 
 	public Question() // Default: Random page
 	{
-		while (true) {
+		
 			Document doc;
-			try {
+		
 				boolean invalidArticle = true;
 				Elements temp;
 				String title = "";
@@ -137,17 +137,10 @@ public class Question {
 					correctAnswerNumber = 4;
 					break;
 				default:
-					throw new Exception();
+					break;
 				}
 
-			} catch (Exception e) {
-				// try again
-			}
-			if (question != null) {
-				break;
-			}
-
-		}
+		
 	}
 
 	private static String phraseQuestion(String q) {
